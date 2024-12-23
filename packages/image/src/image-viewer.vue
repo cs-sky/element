@@ -91,6 +91,10 @@ export default {
     initialIndex: {
       type: Number,
       default: 0
+    },
+    infinite:{
+      type:Boolean,
+      default:true
     }
   },
 
@@ -98,7 +102,6 @@ export default {
     return {
       index: this.initialIndex,
       isShow: false,
-      infinite: true,
       loading: false,
       mode: Mode.CONTAIN,
       transform: {
